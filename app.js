@@ -42,9 +42,9 @@ app.post("/",function(req,res){
     //NOTE- in case of https we used, we wanted to get data, but here in this case we actually want
     //to post data to the mailchimp servers --> https.request
 
-    // const url= "https://us9.api.mailchimp.com/3.0/lists/4bacb21fd9";
+    const url= "https://us9.api.mailchimp.com/3.0/lists/4bacb21fd9";
     //to test for failure
-    const url= "https://us9.api.mailchimp.com/3.0/lists/4bacb21fd";
+//     const url= "https://us9.api.mailchimp.com/3.0/lists/4bacb21fd";
 
     const options= {
         method: "POST",
