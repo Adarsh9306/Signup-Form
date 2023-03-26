@@ -3,7 +3,7 @@ const bodyParser= require("body-parser");
 const app= new express();
 const mailChimp= require("@mailchimp/mailchimp_marketing");
 const https= require("https");
-mailChimp.setConfig({apiKey:"3f51a5c86b784f5fdecae07576f7b2c4-us9",server:"us9"})
+mailChimp.setConfig({apiKey:"2e4a4fae96b277a5897a740e06f5ae0a-us9",server:"us9"})
 
 app.get("/",function(req,res){
     res.sendFile(__dirname+"/signup.html");
@@ -48,7 +48,7 @@ app.post("/",function(req,res){
 
     const options= {
         method: "POST",
-        auth: "adarsh9306:3f51a5c86b784f5fdecae07576f7b2c4-us9"
+        auth: "adarsh9306:2e4a4fae96b277a5897a740e06f5ae0a-us9"
     }
 
     const request= https.request(url,options,function(response){
